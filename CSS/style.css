@@ -74,6 +74,7 @@ header {
   max-width: 374px;
   width: 100%;
   padding-left: 16px;
+  outline: none;
 }
 .izbrane {
   cursor: pointer;
@@ -97,14 +98,12 @@ header {
 }
 .img_select {
   cursor: pointer;
-
   display: flex;
   align-items: center;
   gap: 11px;
 }
 select {
   cursor: pointer;
-
   border: none;
   padding: 8px;
 }
@@ -124,6 +123,7 @@ main {
   align-items: center;
   justify-content: center;
   animation: modalScale 0.3s linear alternate;
+  overflow: none;
 }
 
 .modal.open {
@@ -131,12 +131,13 @@ main {
 }
 .modal-content {
   margin-top: 400px;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   width: 420px;
   /* padding: 20px; */
   /* border-radius: 10px; */
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
   background: #fff;
+  /* margin-bottom: 100px; */
 }
 
 @keyframes modalScale {
@@ -172,11 +173,20 @@ main {
   border: 1px solid #70c05b;
   border-radius: 4px;
   outline: none;
-
   /* border: none; */
   padding: 14px 23px;
   box-shadow: 4px 8px 16px 0px #70c05b33;
   color: #222;
+}
+/* .img_bground{
+  baground-color
+} */
+.header_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 .mobel {
   padding-top: 32px;
@@ -258,10 +268,26 @@ main {
 .car1 {
   text-align: center;
   display: flex;
-  /* padding-right: 30px; */
+  padding-right: 30px;
   /* background-color: #fff; */
   justify-content: space-between;
   /* gap: 40px; */
+}
+.aksiya {
+  margin-left: 30px;
+  font-family: Rubikbold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+}
+.produkt_1 {
+  margin-right: 40px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
 }
 .card {
   /* background-color: #fff; */
@@ -270,6 +296,7 @@ main {
   display: flex !important;
   flex-wrap: wrap;
   gap: 40px;
+  margin-right: 30px;
   /* padding: 8px 8px 8px 8px; */
 }
 .card_dom {
